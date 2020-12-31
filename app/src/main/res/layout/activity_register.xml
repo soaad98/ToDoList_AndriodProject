@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/tv_RegisterTitle"
+        android:layout_width="277dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Create profile to\nstart your first\nToDo List"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="38dp"
+        android:background="@drawable/et_background"
+        android:ems="10"
+        android:hint="your name"
+        android:inputType="textPersonName"
+        android:paddingStart="28dp"
+        android:paddingEnd="4dp"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_RegisterTitle" />
+
+    <EditText
+        android:id="@+id/et_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="38dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/et_background"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="28dp"
+        android:paddingEnd="4dp"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Name" />
+
+    <EditText
+        android:id="@+id/et_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="38dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/et_background"
+        android:ems="10"
+        android:hint="Your email address"
+        android:inputType="textEmailAddress"
+        android:paddingStart="28dp"
+        android:paddingEnd="4dp"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Password" />
+
+    <Button
+        android:id="@+id/btn_Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="38dp"
+        android:background="@drawable/button_background"
+        android:text="Create your profile"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Email" />
+
+    <ProgressBar
+        android:id="@+id/pc_loading"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="38dp"
+        android:indeterminate="true"
+        android:indeterminateTint="#FF7135D8"
+        android:translationZ="2dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Email" />
+
+    <TextView
+        android:id="@+id/tv_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:gravity="center"
+        android:text="Already have an account?"
+        android:textColor="#BAB8B8"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Register" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Log in"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_account" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

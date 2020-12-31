@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TODO List</string>
+    <string name="next_underline"><u>next</u></string>
+    <string name="Logout"><u>Logout</u></string>
+</resources>

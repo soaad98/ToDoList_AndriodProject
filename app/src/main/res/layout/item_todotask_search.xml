@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="23dp"
+    android:layout_marginBottom="34dp"
+    android:background="@drawable/item_background"
+    android:padding="11dp">
+
+    <CheckBox
+        android:id="@+id/cb_task_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/cb_selector"
+        android:paddingHorizontal="9dp" />
+
+    <TextView
+        android:id="@+id/tv_task_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingVertical="5dp"
+        android:text="Meeting Joseph"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_list_title"
+        android:layout_width="54dp"
+        android:layout_height="20dp"
+        android:background="@drawable/label_background"
+        android:gravity="center"
+        android:layout_marginStart="18dp"
+        android:text="Personal"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="9sp" />
+</LinearLayout>
